@@ -1,0 +1,77 @@
+/* basic css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* colors */
+  --primary-color: hsl(29deg 80% 58%);
+  --secondary-color: hsl(29deg 16% 10%);
+  /* fonts */
+  --font-family: "Poppins", sans-serif;
+  --font-size: "62.5%";
+}
+
+/* styles begin */
+body {
+  background-color: rgb(227, 227, 227);
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 200px 400px;
+  height: 100vh;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  text-align: center;
+  border: 2px solid var(--primary-color);
+  border-radius: 15%;
+  padding: 20px 5px;
+  background-color: var(--secondary-color);
+  color: rgb(208, 208, 208);
+}
+
+.profile-image-container {
+  width: 100%;
+}
+
+.profile-image-container img {
+  width: 50%;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.profile-name {
+  margin: 10px 0;
+  color: var(--primary-color);
+}
+
+.profile-title {
+  margin: 5px 0 20px 0;
+}
+
+.profile-link-container {
+  position: absolute;
+  bottom: -15px;
+  width: 70%;
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 3rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.profile-link {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
