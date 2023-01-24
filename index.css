@@ -16,6 +16,7 @@
 /* styles begin */
 body {
   background-color: rgb(227, 227, 227);
+  font-family: var(--font-family);
 }
 
 .container {
